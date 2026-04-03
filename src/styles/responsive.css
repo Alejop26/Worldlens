@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+  .country-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+  .rank-item    { grid-template-columns: 36px 28px 1fr auto; gap: 8px; }
+  .compare-view { font-size: 13px; }
+}
+
+@media (max-width: 480px) {
+  .app          { padding: 0 16px 120px; }
+  .header       { padding: 24px 0 20px; }
+  .logo         { font-size: 26px; }
+  .tab          { padding: 8px 12px 12px; font-size: 12px; }
+  .stat-grid    { grid-template-columns: 1fr 1fr; }
+}

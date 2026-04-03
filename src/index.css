@@ -1,0 +1,17 @@
+/* 1. Variables, reset y animaciones globales */
+@import './styles/base.css';
+
+/* 2. Estructura de página */
+@import './styles/layout.css';
+
+/* 3. Átomos reutilizables */
+@import './styles/ui.css';
+
+/* 4. Módulos de vistas */
+@import './styles/explorer.css';
+@import './styles/compare.css';
+@import './styles/rankings.css';
+@import './styles/detail.css';
+
+/* 5. Breakpoints */
+@import './styles/responsive.css';
