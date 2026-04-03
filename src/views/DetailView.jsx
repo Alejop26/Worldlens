@@ -33,8 +33,6 @@ export default function DetailView({ countries }) {
         <StatCard label="Área"           value={fmtArea(c.area)}                                                        />
         <StatCard label="Densidad"       value={density ? `${density} hab/km²` : '—'}                                  />
         <StatCard label="Índice Gini"    value={gini ? `${gini.value}% (${gini.year})` : '—'}   accent="accent-green" />
-        <StatCard label="Zonas hor."     value={c.timezones?.length ?? '—'}                                             />
-        <StatCard label="Fronteras"      value={c.borders?.length ?? 0}                                                 />
       </div>
 
       <div className="detail-sections">
@@ -42,7 +40,6 @@ export default function DetailView({ countries }) {
           <div className="section-title">Datos generales</div>
           <InfoRow label="Capital"  value={getCapital(c)}    />
           <InfoRow label="Idiomas"  value={getLanguages(c)}  />
-          <InfoRow label="Moneda"   value={getCurrencies(c)} />
           <InfoRow label="Región"   value={[c.region, c.subregion].filter(Boolean).join(' · ')} />
         </div>
 

@@ -15,8 +15,7 @@ export const SORT_OPTIONS = [
 
 export const API_FIELDS = [
   'name', 'flags', 'population', 'area', 'region', 'subregion',
-  'capital', 'languages', 'currencies', 'timezones', 'borders',
-  'gini', 'landlocked', 'unMember', 'continents', 'cca3',
+  'capital', 'languages','gini','cca3',
 ].join(',');
 
 export const MAX_SELECTION = 4;

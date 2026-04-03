@@ -5,7 +5,6 @@ import CountryGrid from '../components/explorer/CountryGrid';
 
 export default function ExplorerView({ countries }) {
   const { selection, openDetail } = useAppContext();
-  console.log("selection", selection)
   const { query, setQuery, region, setRegion, sortBy, setSortBy, filtered } = useCountryFilter(countries);
 
   return (
