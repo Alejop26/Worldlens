@@ -1,174 +1,125 @@
-# Worldlens
-La aplicación permite a los usuarios descubrir estadísticas clave de cada país —como población, área, región, capital, idiomas y banderas— y realizar comparaciones entre varios países para visualizar diferencias y rankings basados en distintos indicadores.
-# 🌍 WorldLens — Country Intelligence
+🌍 WorldLens — Country Intelligence
 
-WorldLens es una aplicación web interactiva que permite explorar, analizar y comparar información de países alrededor del mundo utilizando datos en tiempo real provenientes de la REST Countries API.
+WorldLens is an interactive web application that allows users to explore, analyze, and compare information about countries around the world using real-time data from the REST Countries API.
 
-La aplicación está diseñada para ofrecer una forma visual y sencilla de analizar datos demográficos y geográficos, permitiendo a los usuarios descubrir diferencias entre países mediante comparaciones y rankings basados en distintos indicadores.
+The application is designed to provide a simple and visual way to analyze demographic and geographic data, allowing users to discover differences between countries through comparisons and rankings based on different indicators.
 
----
+🚀 Features
+🌎 Global Exploration
 
-# 🚀 Características
+Explore basic information about countries around the world, including:
 
-### 🌎 Exploración global
+name
+flag
+population
+area
+region and subregion
+capital
+languages
+Gini index
+⚖️ Country Comparison
 
-Explora información básica de todos los países del mundo incluyendo:
+Select multiple countries and compare them directly to analyze differences in:
 
-* nombre
-* bandera
-* población
-* área
-* región y subregión
-* capital
-* idiomas
-* índice Gini
+population
+territorial size
+socioeconomic indicators
 
-### ⚖️ Comparación de países
+This helps users quickly understand how countries rank relative to each other.
 
-Selecciona varios países y compáralos directamente para analizar diferencias en:
+🏆 Rankings
 
-* población
-* tamaño territorial
-* indicadores socioeconómicos
+The application allows users to view rankings based on different indicators such as:
 
-Esto permite entender rápidamente cómo se posicionan los países entre sí.
+most populated countries
+countries with the largest area
+comparisons between regions
+Gini index
+population density
+languages
+🌐 Real-Time Data
 
----
+All data is fetched directly from the REST Countries API, ensuring updated information for each country.
 
-### 🏆 Rankings
+🛠️ Technologies Used
+React
+JavaScript (ES6+)
+Fetch API
+HTML5
+CSS3
 
-La aplicación permite visualizar rankings basados en distintos indicadores como:
+API used:
 
-* países más poblados
-* países con mayor área
-* comparaciones entre regiones
-* índice gini
-* densidad 
-* idiomas
+REST Countries API
+📊 Data Retrieved from the API
 
----
+The application uses the following API fields:
 
-### 🌐 Datos en tiempo real
+name
+flags
+population
+area
+region
+subregion
+capital
+languages
+cca3
+gini
 
-Los datos se obtienen directamente desde la **REST Countries API**, asegurando información actualizada de cada país.
+These fields enable comparative analysis between countries.
 
----
+⚙️ Installation
 
-# 🛠️ Tecnologías utilizadas
+Clone the repository:
 
-* React
-* JavaScript (ES6+)
-* Fetch API
-* HTML5
-* CSS3
+git clone https://github.com/your-username/worldlens.git
 
-API utilizada:
+Go into the project directory:
 
-* REST Countries API
-
----
-
-# 📊 Datos obtenidos de la API
-
-La aplicación utiliza los siguientes campos de la API:
-
-* `name`
-* `flags`
-* `population`
-* `area`
-* `region`
-* `subregion`
-* `capital`
-* `languages`
-* `cca3`
-* `gini`
-
-Estos datos permiten realizar análisis comparativos entre países.
-
----
-
-# ⚙️ Instalación
-
-Clona el repositorio:
-
-```bash
-git clone https://github.com/tu-usuario/worldlens.git
-```
-
-Entra al proyecto:
-
-```bash
 cd worldlens
-```
 
-Instala las dependencias:
+Install dependencies:
 
-```bash
 npm install
-```
+▶️ Run the Application
 
----
+Start the development server:
 
-# ▶️ Ejecutar la aplicación
-
-Para iniciar el servidor de desarrollo:
-
-```bash
 npm run dev
-```
 
-o
+or
 
-```bash
 npm start
-```
 
-Luego abre en el navegador:
+Then open in your browser:
 
-```
 http://localhost:3000
-```
+📡 API Consumption
 
----
+The application fetches data using the endpoint:
 
-# 📡 Consumo de la API
-
-La aplicación obtiene datos usando el endpoint:
-
-```
 https://restcountries.com/v3.1/all
-```
 
-y filtra los campos necesarios para mejorar el rendimiento.
+and filters only the necessary fields to improve performance.
 
-Ejemplo del servicio utilizado:
+Example service used:
 
-```javascript
 const BASE = 'https://restcountries.com/v3.1';
 const FIELDS = 'name,flags,population,area,region,subregion,capital,languages,cca3,gini';
-```
+🎯 Project Purpose
 
----
+This project was developed as part of a portfolio to demonstrate skills in:
 
-# 🎯 Objetivo del proyecto
+consuming external APIs
+state management in React
+building interactive user interfaces
+data visualization and comparison
+🤝 Contributions
 
-Este proyecto fue desarrollado como parte de un portafolio para demostrar habilidades en:
+Contributions are welcome.
 
-* consumo de APIs externas
-* manejo de estado en React
-* desarrollo de interfaces interactivas
-* visualización y comparación de datos
+You can:
 
----
-
-# 🤝 Contribuciones
-
-Las contribuciones son bienvenidas.
-
-Puedes:
-
-1. hacer un fork del proyecto
-2. crear una nueva rama
-3. enviar un pull request
-
----
+fork the repository
+create a new branch
+submit a pull request
